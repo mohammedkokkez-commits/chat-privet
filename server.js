@@ -239,11 +239,10 @@ app.get('/chat', requireAuth, (req, res) => {
 '<input type="hidden" name="csrf" value="' + req.session.csrf + '">' +
 '<button type="submit" class="link-btn danger">مسح المحادثة بالكامل</button>' +
 '</form>' +
-'<button onclick="window.location.reload();" class="link-btn">تحديث الصفحة 🔄</button>' +
-'</form>' +
+'<button onclick="window.location.reload();" class="link-btn" style="margin-top: 10px;">تحديث المحادثة 🔄</button>' +
 
-// أضف هذا السطر هنا ليظهر زر التحديث اليدوي
-'<button onclick="window.location.reload();" class="link-btn" style="margin-top: 10px;">تحديث المحادثة 🔄</button>'
+
+
 
 
   const html = page('محادثة خاصة', body).replace(
