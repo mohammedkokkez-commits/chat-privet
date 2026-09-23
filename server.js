@@ -234,13 +234,9 @@ app.get('/chat', requireAuth, (req, res) => {
     '<form method="POST" action="/chat/clear" class="clear-form">' +
     '<input type="hidden" name="csrf" value="' + req.session.csrf + '">' +
     '<button type="submit" class="link-btn danger">مسح المحادثة بالكامل</button>' +
-    '</form>';
-    '<form action="/chat/clear" method="POST" class="clear-form">' +
-'<input type="hidden" name="csrf" value="' + req.session.csrf + '">' +
-'<button type="submit" class="link-btn danger">مسح المحادثة بالكامل</button>' +
-'</form>' +
+    '</form>'+
 '<button onclick="window.location.reload();" class="link-btn" style="margin-top: 10px;">تحديث المحادثة 🔄</button>' +
-
+'</form>';
 
 
 
