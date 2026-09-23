@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const SESSION_HOURS = 12;
 const SESSION_MS = SESSION_HOURS * 60 * 60 * 1000;
-const MESSAGE_TTL_MS = 24 * 60 * 60 * 1000; // الرسائل تختفي تلقائيًا بعد 24 ساعة
+const MESSAGE_TTL_MS = 05 * 60 * 1000; // الرسائل تختفي تلقائيًا بعد 24 ساعة
 const REFRESH_SECONDS = 60; // كل كام ثانية تتحدث الشات تلقائيًا
 
 // ---------- التحقق من متغيرات البيئة المطلوبة ----------
