@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 const SESSION_HOURS = 12;
 const SESSION_MS = SESSION_HOURS * 60 * 60 * 1000;
 const MESSAGE_TTL_MS = 24 * 60 * 60 * 1000; // الرسائل تختفي تلقائيًا بعد 24 ساعة
-const REFRESH_SECONDS = 15; // كل كام ثانية تتحدث شاشة الشات تلقائيًا
+
 
 // ---------- التحقق من متغيرات البيئة المطلوبة ----------
 const required = ['USER1_NAME', 'USER1_PASSWORD', 'USER2_NAME', 'USER2_PASSWORD', 'COOKIE_SECRET'];
