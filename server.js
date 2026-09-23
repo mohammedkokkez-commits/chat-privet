@@ -235,7 +235,7 @@ app.get('/chat', requireAuth, (req, res) => {
     '<input type="hidden" name="csrf" value="' + req.session.csrf + '">' +
     '<button type="submit" class="link-btn danger">مسح المحادثة بالكامل</button>' +
     '</form>' +
-'<a href="/chat" class="link-btn" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; text-align: center;">تحديث المحادثة 🔄</a>' +
+'<a href="/chat" class="link-btn" style="display: inline-block; margin-top: 10px; text-align: center;">تحديث المحادثة 🔄</a>' +
 '</form>';
 
 
