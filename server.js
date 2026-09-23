@@ -217,7 +217,6 @@ app.get('/chat', requireAuth, (req, res) => {
   }).join('');
 
   const body =
-  '<button onclick="window.location.reload();" class="link-btn">تحديث الصفحة 🔄</button>'
     '<header class="chat-header">' +
     '<strong>أنت: ' + esc(me) + '</strong>' +
     '<span class="with">تتحدث مع: ' + esc(partner) + '</span>' +
@@ -240,6 +239,7 @@ app.get('/chat', requireAuth, (req, res) => {
 '<input type="hidden" name="csrf" value="' + req.session.csrf + '">' +
 '<button type="submit" class="link-btn danger">مسح المحادثة بالكامل</button>' +
 '</form>' +
+'<button onclick="window.location.reload();" class="link-btn">تحديث الصفحة 🔄</button>'
 
 // أضف هذا السطر هنا ليظهر زر التحديث اليدوي
 '<button onclick="window.location.reload();" class="link-btn" style="margin-top: 10px;">تحديث المحادثة 🔄</button>'
